@@ -1,10 +1,11 @@
 {
   "name": "pikabot",
-  "version": "1.0.0",
+  "version": "0.2",
   "description": "ぴかぼっとだよ",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node bot.js",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
