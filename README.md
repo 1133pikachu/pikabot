@@ -3,4 +3,4 @@
 
 参考:[discord.js guide](https://discordjs.guide/#before-you-begin)
 
-version:discord.js-v14 node.js-v16
+version:discord.js-v14 node.js-v18
