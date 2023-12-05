@@ -1,0 +1,25 @@
+{
+  "name": "pikabot",
+  "version": "1.0.0",
+  "description": "ぴかぼっとだよ",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1133pikachu/pikabot.git"
+  },
+  "keywords": [
+    "pikabot"
+  ],
+  "author": "1133_pikachu",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/1133pikachu/pikabot/issues"
+  },
+  "homepage": "https://github.com/1133pikachu/pikabot#readme",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
