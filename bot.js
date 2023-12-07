@@ -37,18 +37,9 @@ for (const file of eventFiles) {
 	}
 }
 
-client.on('ready', () => {
-	console.log(`Logged in as ${client.user.tag}`);
-  
+client.on('ready', () => {  
 	// ステータスの設定
-	client.user.setPresence({
-	  activities: [
-		{
-		  name: 'ぴかー',
-		  type: 'PLAYING', // または 'WATCHING', 'LISTENING', 'STREAMING'
-		},
-	  ],
-	  status: 'idle', // 'online', 'idle', 'dnd', 'invisible'
-	});
+	client.user.setActivity('ﾐﾉﾘﾁｬﾝｶﾜｲｲﾈ', 'playing');
   });
+
 client.login(token);
