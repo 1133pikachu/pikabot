@@ -1,7 +1,7 @@
 // d.js v14
 const fs = require('node:fs');
 const path = require('node:path');
-const { Client, Collection, GatewayIntentBits } = require('discord.js');
+const { Client, Collection, GatewayIntentBits, ActivityType } = require('discord.js');
 const { token } = require('./config.json');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -37,9 +37,14 @@ for (const file of eventFiles) {
 	}
 }
 
-client.on('ready', () => {  
-	// ステータスの設定
-	client.user.setActivity('ﾐﾉﾘﾁｬﾝｶﾜｲｲﾈ', 'playing');
+client.on('ready', () => {
   });
+
+const interval = setInterval(() => {
+	// ステータスメッセージをランダムに変更する
+	const statusMessage = ["ﾐﾉﾘﾁｬﾝｶﾜｲｲﾈ", "ﾐﾉﾘﾁｬﾝｶﾜｲｲﾔｯﾀｰ!", "ぴかー", "ぶおおお", "プロセカ"][Math.floor(Math.random() * 4)];
+	const actibityType = ActivityType.Playing;
+	client.user.setActivity(statusMessage, actibityType);
+}, 60000);
 
 client.login(token);
