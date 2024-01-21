@@ -42,7 +42,7 @@ client.on('ready', () => {
 
 const interval = setInterval(() => {
 	// ステータスメッセージをランダムに変更する
-	const statusMessage = ["ﾐﾉﾘﾁｬﾝｶﾜｲｲﾈ", "ﾐﾉﾘﾁｬﾝｶﾜｲｲﾔｯﾀｰ!", "ぴかー", "ぶおおお", "プロセカ"][Math.floor(Math.random() * 4)];
+	const statusMessage = ["ﾐﾉﾘﾁｬﾝｶﾜｲｲﾈ", "ﾐﾉﾘﾁｬﾝｶﾜｲｲﾔｯﾀｰ!", "ぴかー", "ぶおおお", "プロセカ", "原神", "厳選impact"][Math.floor(Math.random() * 4)];
 	const actibityType = ActivityType.Playing;
 	client.user.setActivity(statusMessage, actibityType);
 }, 60000);
