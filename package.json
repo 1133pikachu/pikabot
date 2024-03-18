@@ -74,7 +74,7 @@
     "tslib": "^2.6.2",
     "tweetnacl": "^1.0.3",
     "undici": "^6.7.1",
-    "undici-types": "^6.7.1",
+    "undici-types": "^5.28.3",
     "util-deprecate": "^1.0.2",
     "webidl-conversions": "^7.0.0",
     "whatwg-url": "^14.0.0",
