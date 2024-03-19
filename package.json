@@ -47,7 +47,7 @@
     "miniget": "^4.2.3",
     "minimatch": "^9.0.0",
     "minipass": "^7.0.0",
-    "minizlib": "^2.1.2",
+    "minizlib": "^3.0.0",
     "mkdirp": "^3.0.0",
     "ms": "^2.1.2",
     "node-addon-api": "^8.0.0",
