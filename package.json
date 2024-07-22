@@ -1,11 +1,12 @@
 {
   "name": "pikabot",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "ぴかぼっとだよ",
   "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bot.js"
+    "start": "node bot.js",
+    "deploy": "node deploy-commands.js"
   },
   "dependencies": {
     "@discordjs/opus": "^0.9.0",
