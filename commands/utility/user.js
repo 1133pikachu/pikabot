@@ -3,8 +3,8 @@ const { SlashCommandBuilder } = require('discord.js');
 module.exports = {
     data: new SlashCommandBuilder()
     .setName('user')
-    .setDescription('ユーザーに関する情報を提供します。'),
+    .setDescription('Provides information about the user.'),
     async execute(interaction) {
-        await interaction.reply(`あなたがこのサーバーに参加した時間は ${interaction.member.joinedAt} です。`);
+        await interaction.reply(`This command was run by ${interaction.user.username}, who joined on ${interaction.member.joinedAt}.`);
     },
 };
