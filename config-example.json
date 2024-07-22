@@ -1,8 +1,5 @@
 {
     "token": "",
     "clientId": "",
-    "guildId": "",
-    "prefix": "",
-    "owner_id": "",
-    "DEEPL_API_KEY": ""
+    "guildId": ""
 }
