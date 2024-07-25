@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { DEEPL_API_KEY } = require('../config.json');
+const { DEEPL_API_KEY, prefix } = require('../config.json');
 
 async function translateText(text, targetLang) {
     try {
@@ -29,7 +29,11 @@ function isJapanese(text) {
 }
 
 async function handle(message) {
-    if (message.content.startsWith('!tl')) {
+    if (!message.content.startsWith(prefix)) return;
+    const args = message.content.slice(prefix.length).trim().split(/ +/);
+    const command = args.shift().toLowerCase();
+
+    if (command === 'tl') {
         const textToTranslate = message.content.slice(3).trim();
 
         if (textToTranslate.length === 0) {
